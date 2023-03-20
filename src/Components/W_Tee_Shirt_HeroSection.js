@@ -6,7 +6,7 @@ const W_Tee_Shirt_HeroSection = () => {
         <>
             <div className=' grid justify-items-center items-center bg-white'>
 
-                <div className='slide '>
+                <div className='slides '>
                     
 
                 </div>

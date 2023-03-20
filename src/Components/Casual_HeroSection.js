@@ -11,7 +11,7 @@ const Casual_HeroSection = () => {
     return (
         <>
 
-            <div className=' grid justify-items-center items-center bg-white'>
+            <div className=' grid justify-items-center w-[100%] items-center bg-white'>
                 <div className='cauSlide '>
 
 
@@ -44,7 +44,7 @@ const Casual_HeroSection = () => {
                         </div>
                     </div>
                 </div> */}
-                <div className=' w-[85%] md:w-[85%] lg:w-[95%] grid-cols-1 grid md:grid-cols-2 justify-items-center lg:grid-cols-4 gap-y-6 mt-2 p-4'>
+                <div className='w-[96%] grid-cols-2 grid md:grid-cols-3 justify-items-center lg:grid-cols-4 gap-4 mt-2 p-4'>
 
 
                     {
@@ -61,7 +61,7 @@ const Casual_HeroSection = () => {
 
 
 
-                                            < section className=' border-black  w-[80%] md:w-[80%] border bg-gray-300 bg-opacity-70  ' key={id}>
+                                            < section className=' border-black  w-[100%] h-[100%] border bg-gray-300 bg-opacity-70  ' key={id}>
                                                 <img src={poster} className="h-56 w-[100%]" />
                                                 <div className=' p-4'>
                                                     <div className=' font-bold'>{title}</div>
@@ -92,7 +92,7 @@ const Casual_HeroSection = () => {
 
 
 
-                <div className=' w-[85%] md:w-[85%] lg:w-[95%] grid-cols-1 grid md:grid-cols-2 justify-items-center lg:grid-cols-4 gap-y-6 mt-2 p-4'>
+                <div className=' w-[96%] grid-cols-2 gap-4 grid md:grid-cols-3 justify-items-center lg:grid-cols-4  mt-2 '>
 
 
                     {
@@ -102,7 +102,7 @@ const Casual_HeroSection = () => {
 
                             return (
                                 <>
-                                    < section className=' border-black  w-[80%] md:w-[80%] border bg-gray-300 bg-opacity-70  '>
+                                    < section className=' border-black w-[100%] border bg-gray-300 bg-opacity-70  '>
                                         <img src={poster} className="h-56 w-[100%]" />
                                         <div className=' p-4'>
                                             <div className=' font-bold'>{title}</div>

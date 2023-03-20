@@ -1,10 +1,15 @@
-import React, { useContext, useState, useEffect } from "react";
-
+import React, { useContext, useState, useEffect, useReducer } from "react";
+import reducer from "../Components/Reducer/DataReducer";
 const ContextApp = React.createContext();
 
 
 // const api_url = ` https://apidata1.herokuapp.com/apidata`;
 const api_url = ` http://localhost:3001/shopping`;
+
+const initialState = {
+    data: [],
+    SingleProduct: {}
+}
 
 const AppProvider = (({ children }) => {
 
@@ -18,12 +23,21 @@ const AppProvider = (({ children }) => {
     const [casual, setCasual] = useState([])
     const [polo, setPolo] = useState([])
     const [mteeshirt, setMTeeShirt] = useState([])
+    const [card, setCard] = useState([])
+    const [m_trouser, setM_Trouser]=useState([]);
+   
+    const [state, dispatch] = useReducer(reducer, initialState)
 
     const getProject = async (url) => {
+
 
         try {
             const res = await fetch(url);
             const data = await res.json();
+            dispatch({
+                type:"SET_API_DATA",
+                payload:data
+            })
             // console.log(data);
             if (data.Response === "True") {
                 setShoping(data.Ecommerce);
@@ -35,6 +49,8 @@ const AppProvider = (({ children }) => {
                 setCasual(data.Casual);
                 setPolo(data.Polo);
                 setMTeeShirt(data.MenTeeShirt);
+                setCard(data.Freelancer_Card);
+                setM_Trouser(data.M_Trouser_Short);
 
             }
             else {
@@ -52,6 +68,18 @@ const AppProvider = (({ children }) => {
 
     }
 
+    const getSingleProduct = async () => {
+        try {
+
+            // const res = await fetch(url);
+            // const SingleProduct = await res.json();
+
+
+        } catch (error) {
+
+        }
+    }
+
     useEffect(() => {
         let timerOut = setTimeout(() => {
             getProject(`${api_url}`);
@@ -65,7 +93,7 @@ const AppProvider = (({ children }) => {
 
 
     return (
-        <ContextApp.Provider value={{ shoping, query, setQuery, men, women, womenteeshirt, hood, jacket , casual,polo ,mteeshirt }}>
+        <ContextApp.Provider value={{ ...state, shoping, query, setQuery, men, women, womenteeshirt, hood, jacket, casual, polo, mteeshirt, card ,m_trouser }}>
             {children}
         </ContextApp.Provider>
     )

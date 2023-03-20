@@ -1,10 +1,18 @@
 import React from 'react'
 import { useGlobalContext } from './Context'
-
+import { useNavigate } from "react-router-dom"
 
 
 
 const HeroSection = () => {
+    const navigate = useNavigate();
+
+    function Dynamic({ title }) {
+        navigate('/singleproduct')
+
+
+
+    }
 
 
     const { shoping } = useGlobalContext();
@@ -23,10 +31,10 @@ const HeroSection = () => {
 
                     {
                         shoping.map((item) => {
-                            const { id ,names, title, brand, poster, price, priceoff, rating } = item;
+                            const { id, names, title, brand, poster, price, priceoff, rating } = item;
                             return (
                                 <>
-                                    <section className=' border-black  w-[80%] md:w-[90%] border bg-gray-300 bg-opacity-70  ' key={id}>
+                                    <section className=' border-black  w-[80%] md:w-[90%] border bg-gray-300 bg-opacity-70  ' key={id} onClick={Dynamic}>
                                         <img src={poster} className="h-64 w-[100%]" />
                                         <div className=' p-4'>
                                             <div className=' font-bold'>{title}</div>

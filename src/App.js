@@ -13,6 +13,11 @@ import Casual from './Pages/Casual';
 import Single_Product from './Pages/Single_Product';
 import Polo from './Pages/Polo';
 import M_TeeShirt from './Pages/M_TeeShirt';
+import Freelancer from './Pages/Freelancer';
+import M_Trouser from './Pages/M_Trouser';
+import Mens_Denims from './Pages/Mens_Denims';
+import SignIn from './Pages/SignIn';
+import Signup from './Pages/Signup';
 
 function App() {
   return (
@@ -20,6 +25,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/freelancer' element={<Freelancer />} />
+
         <Route path='/shop' element={<Shop />} />
         <Route path='/mens' element={<Mens />} />
 
@@ -29,9 +36,13 @@ function App() {
         <Route path='/womenjacket' element={<Jacket />} />
         <Route path='/womentrouser' element={<Trouser />} />
         <Route path='/mencasual' element={<Casual />} />
-        <Route  path='/singleproduct'  element={<Single_Product />} />
+        <Route path='/singleproduct' element={<Single_Product />} />
         <Route path='/menpolo' element={<Polo />} />
         <Route path='/menteeshirt' element={<M_TeeShirt />} />
+        <Route path='/mentrouser' element={<M_Trouser />} />
+        <Route path='/mendenims' element={<Mens_Denims />} />
+        <Route path='/signin' element={<SignIn />} />
+        <Route path='/signup' element={<Signup />} />
 
 
 

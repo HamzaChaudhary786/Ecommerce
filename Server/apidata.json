@@ -3,7 +3,7 @@
         {
             "albumId": 11,
             "names": "jacket",
-            "id": 1,
+            "id": "hamza",
             "title": "Mens Denim Jacket",
             "brand": "Brand name",
             "poster": "https://bit.ly/3SC97qy",
@@ -16,7 +16,7 @@
         },
         {
             "albumId": 12,
-            "id": 2,
+            "id": "hamza",
             "names": "jacket",
             "title": "Mens Stylish Jacket",
             "brand": "Brand name",
@@ -30,7 +30,7 @@
         },
         {
             "albumId": 12,
-            "id": 3,
+            "id": "hamza",
             "names": "jacket",
             "title": "Mens Core Jacket",
             "brand": "Brand name",
@@ -44,7 +44,7 @@
         },
         {
             "albumId": 12,
-            "id": 4,
+            "id": "hamza",
             "names": "jacket",
             "title": "Mens Cool Jacket",
             "brand": "Brand name",
@@ -1196,6 +1196,194 @@
             "priceoff": "25% off",
             "link": "/floods",
             "rating": 4.2
+        }
+    ],
+    "Freelancer_Card": [
+        {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        },
+        {
+            "poster": "https://bit.ly/3ZVHnzT",
+            "title": "aI_Ianl",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I create quick custom ai art using midjourney."
+        },
+        {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will  amazing fictional ai art, ai portraits, ai character design"
+        },
+        {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        }
+    ],
+    "M_Trouser_Short": [
+        {
+            "albumId": "Men_Trouser_Short",
+            "id": 50,
+            "names": "trouser",
+            "title": "Louis Vicaci Slim Fit Lycra Trouser Pent For Men-Dark Zinc-BR409",
+            "brand": "Brand name",
+            "poster": " https://bit.ly/40eGYZT",
+            "price": 1999.00,
+            "priceoff": "25% off",
+            "link": "/floods",
+            "rating": 4.2
+        },
+        {
+            "albumId": "Women_Simple_Shirt",
+            "id": 50,
+            "names": "trouser",
+            "title": "Louis Vicaci Slim Fit Lycra Trouser Pent For Men-Carrot Red-BR403",
+            "brand": "Brand name",
+            "poster": "https://bit.ly/42qSyCo",
+            "price": 1999.00,
+            "priceoff": "25% off",
+            "link": "/floods",
+            "rating": 4.2
+        },
+        {
+            "albumId": "Women_Simple_Shirt",
+            "id": 50,
+            "names": "trouser",
+            "title": "Louis Vicaci Slim Fit Lycra Trouser Pent For Men-Zinc-RT1852",
+            "brand": "Brand name",
+            "poster": " https://bit.ly/3yUwa6M",
+            "price": 1999.00,
+            "priceoff": "25% off",
+            "link": "/floods",
+            "rating": 4.2
+        },
+        {
+            "albumId": "Women_Simple_Shirt",
+            "id": 50,
+            "names": "trouser",
+            "title": "Louis Vicaci Slim Fit Lycra Trouser Pent For Men-Yellow-RT1854",
+            "brand": "Brand name",
+            "poster": " https://bit.ly/3n2O98F",
+            "price": 1999.00,
+            "priceoff": "25% off",
+            "link": "/floods",
+            "rating": 4.2
+        },
+        {
+            "albumId": "Women_Simple_Shirt",
+            "id": 50,
+            "names": "trouser",
+            "title": "Louis Vicaci Slim Fit Lycra Trouser Pent For Men-Navy Blue-BR400",
+            "brand": "Brand name",
+            "poster": " https://bit.ly/3ZZBy4K",
+            "price": 1999.00,
+            "priceoff": "25% off",
+            "link": "/floods",
+            "rating": 4.2
+        },
+        {
+            "albumId": "Women_Simple_Shirt",
+            "id": 50,
+            "names": "trouser",
+            "title": "Louis Vicaci Slim Fit Lycra Trouser Pent For Men-Dark Slate Grey-BR402",
+            "brand": "Brand name",
+            "poster": " https://bit.ly/3Z74PJC",
+            "price": 1999.00,
+            "priceoff": "25% off",
+            "link": "/floods",
+            "rating": 4.2
+        }
+    ],
+    "M_Denims": [
+        {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        },
+        {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        }, {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        }, {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        }, {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        }, {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        }, {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        }, {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
+        }, {
+            "poster": "https://bit.ly/3yGxcU4",
+            "title": "itsjason",
+            "level": "Level 1 Seller",
+            "rating": "5.0(73)",
+            "price": "4,450",
+            "image": "https://bit.ly/3FseMKt",
+            "name": "I will make amazing fictional ai art, ai portraits, ai character design"
         }
     ],
     "Response": "True",

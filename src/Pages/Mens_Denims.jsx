@@ -1,17 +1,17 @@
 import React from 'react'
 import Footer from '../Components/Footer'
+import M_Denim_HeroSection from '../Components/M_Denim_HeroSection'
 import Shop_Navbar from '../Components/Shop_Navbar'
-import SingleProduct_HeroSection from "../Components/SingleProduct_HeroSection"
-function Single_Product() {
-   
+
+const Mens_Denims = () => {
     return (
         <>
             <Shop_Navbar />
-            <SingleProduct_HeroSection />
+            <M_Denim_HeroSection />
             <Footer />
-
         </>
+
     )
 }
 
-export default Single_Product
+export default Mens_Denims

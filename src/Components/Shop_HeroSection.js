@@ -40,12 +40,12 @@ const Shop_HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className=' w-[85%] md:w-[85%] lg:w-[95%] grid-cols-1 grid md:grid-cols-2 justify-items-center lg:grid-cols-4 gap-y-6 mt-2 p-4'>
+        <div className=' w-[96%] grid-cols-2 grid md:grid-cols-3 justify-items-center lg:grid-cols-4 gap-4 mt-2 '>
 
 
           {
             shoping.map((item) => {
-              const {id, names, title, brand, poster, price, priceoff, rating, color, gender } = item;
+              const { id, names, title, brand, poster, price, priceoff, rating, color, gender } = item;
 
 
               return (
@@ -57,7 +57,7 @@ const Shop_HeroSection = () => {
 
 
 
-                      < section className=' border-black  w-[80%] md:w-[80%] border bg-gray-300 bg-opacity-70  ' key={id}>
+                      < section className=' border-black  w-[100%]  border bg-gray-300 bg-opacity-70  ' key={id}>
                         <img src={poster} className="h-56 w-[100%]" />
                         <div className=' p-4'>
                           <div className=' font-bold'>{title}</div>
@@ -88,7 +88,7 @@ const Shop_HeroSection = () => {
 
 
 
-        <div className=' w-[85%] md:w-[85%] lg:w-[95%] grid-cols-1 grid md:grid-cols-2 justify-items-center lg:grid-cols-4 gap-y-6 mt-2 p-4'>
+        <div className='w-[96%] grid-cols-2 grid md:grid-cols-3 justify-items-center lg:grid-cols-4 gap-4 mt-2'>
 
 
           {
@@ -98,7 +98,7 @@ const Shop_HeroSection = () => {
 
               return (
                 <>
-                  < section className=' border-black  w-[80%] md:w-[80%] border bg-gray-300 bg-opacity-70  '>
+                  < section className=' border-black  w-[100%]  border bg-gray-300 bg-opacity-70  '>
                     <img src={poster} className="h-56 w-[100%]" />
                     <div className=' p-4'>
                       <div className=' font-bold'>{title}</div>

@@ -14,6 +14,15 @@ const Shop_Navbar = () => {
             name: "Mens", link: "/mens",
             submenu: true,
             sublinks: [
+                {
+                    sublinks: [
+                        {
+                            image: "https://bit.ly/3Fwx0ub"
+                        }
+                    ]
+
+                },
+
 
                 {
                     Head: "Mens Shirts",
@@ -28,8 +37,8 @@ const Shop_Navbar = () => {
                 {
                     Head: "Mens Pants",
                     sublinks: [
-                        { title: "Jeans, Trousers & Shorts", link: "/mensjeans" },
-                        { title: "Trousers & Shorts", link: "/mentrouser" },
+                        { title: "Jeans, Trousers & Shorts", link: "/mentrouser" },
+                        { title: "Mens-Denims", link: "/mendenims" },
 
 
 
@@ -39,10 +48,30 @@ const Shop_Navbar = () => {
 
         },
         {
+            name: "Shop",
+            link: "/",
+
+        },
+
+        {
+            name: "Kids", link: "/kids"
+        },
+        {
+            name: "Home", link: "/home"
+        },
+        {
             name: "Women",
             link: "/women",
             submenu: true,
             sublinks: [
+                {
+                    sublinks: [
+                        {
+                            image: "https://bit.ly/3n6XSec"
+                        }
+                    ]
+
+                },
 
                 {
                     Head: "Womens Shirts",
@@ -67,25 +96,17 @@ const Shop_Navbar = () => {
             ]
 
         },
-        {
-            name: "Kids", link: "/kids"
-        },
-        {
-            name: "Home", link: "/home"
-        },
-        {
-            name: "Shop",
-            link: "/",
 
-        },
 
         {
             name: "Contact", link: "/aboutus",
         },
-
         {
             name: "Sign in", link: "/signin"
         },
+
+
+
 
     ];
     let [open, setOpen] = useState(false);
@@ -102,9 +123,9 @@ const Shop_Navbar = () => {
 
     return (
         <>
-            <div className=' shadow-md w-full top-0  bg-gray-800 left-0 border border-green-500  hover:shadow-md  hover:shadow-indigo-700 hover:border hover:border-indigo-700'>
+            <div className=' shadow-md w-[100%] top-0  bg-gray-800 left-0 border border-green-500  hover:shadow-md  hover:shadow-indigo-700 hover:border hover:border-indigo-700'>
 
-                <div className=' w-full flex items-center  p-5 py-2 lg:px-10  h-auto   md:p-2    md:justify-between   lg:w-screen lg:justify-between '>
+                <div className='  flex items-center md:pr-4 md:pl-2    h-auto justify-items-center    md:justify-between   w-[100%]  '>
 
 
                     <div className=' h-4 w-24 mb-10  cursor-pointer md:h-4 md:w-24 grid sm:justify-items-center sm:justify-center '>
@@ -115,7 +136,7 @@ const Shop_Navbar = () => {
                         </Link>
                     </div>
 
-                    <div className=' text-3xl absolute right-8 cursor-pointer md:hidden' onClick={() => setOpen(!open)}>
+                    <div className=' text-3xl text-white absolute right-8 cursor-pointer md:hidden' onClick={() => setOpen(!open)}>
                         <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
                     </div>
 
@@ -125,24 +146,25 @@ const Shop_Navbar = () => {
 
 
 
-                    <ul className={`md:flex md:items-center  md:pb-0 pb-12 absolute md:static bg-gray-800 h-80 w-full left-0 md:w-auto md:h-auto md:pl-0  transition-all duration-700 ease-in ${open ? 'top-[75px] opacity-100' : 'top-[-490px]'} md:opacity-100 `}>
+                    <ul className={`md:flex grid gap-3 grid-cols-2 md:items-center  absolute md:static bg-gray-800 w-[100%] h-auto left-0 md:w-auto md:h-auto p-2 md:pl-0  transition-all duration-700 ease-in ${open ? 'top-[60px] opacity-100' : 'top-[-490px]'} md:opacity-100 `}>
                         {
                             Links.map((item) => {
                                 return (
                                     <>
-                                        <li key={item.name} className="  text-center text-lgssssss md:my-0 my-4 w-fit group pl-7 md:p-2    ">
-                                            <Link to={item.link} className='text-white hover:text-green-500  duration-500 md:text-base lg:p-2    lg:text-lg   '>{item.name}</Link>
+                                        <li key={item.name} className=" grid items-center text-lg h-auto md:h-[60px] w-fit group       ">
+                                            <Link to={item.link} className='text-white   duration-500 md:text-base lg:p-2 grid items-center   lg:text-lg h-[60px] w-[100%]  '>{item.name}</Link>
                                             {
                                                 item.submenu && <div>
                                                     <div className=''>
-                                                        <div className=' absolute lg:top-[45px]  grid grid-cols-2 cursor-pointer rounded-lg  '>
+                                                        <div className=' absolute top-[70px]  grid grid-cols-3 cursor-pointer rounded-lg  md:-ml-0  bg-slate-200  '>
                                                             {
                                                                 item.sublinks.map((mysublink) => {
                                                                     return (
                                                                         <>
 
                                                                             <div className='hidden  group-hover:block hover:block
-                                                                    bg-slate-200  lg:mt-8 h-auto w-52  justify-center rounded -ml-1'>
+                                                                    justify-items-start h-auto  w-36 md:w-52 rounded -ml-1 '>
+
 
                                                                                 <h1 className=' font-bold ml-2'>{mysublink.Head}</h1>
                                                                                 {
@@ -150,6 +172,7 @@ const Shop_Navbar = () => {
                                                                                         return (
                                                                                             <>
                                                                                                 <Link to={slink.link}>
+                                                                                                    <img src={slink.image} className='' />
                                                                                                     <li className=' ml-6 lg:mt-1 hover:text-slate-400'>
                                                                                                         {slink.title}
 
@@ -179,14 +202,14 @@ const Shop_Navbar = () => {
                             })
                         }
 
-                        <div className='pt-2'>
+                        {/* <div className='pt-2'>
                             <Link className='text-2xl text-white ml-2'>
                                 <ion-icon name="bookmark-outline" ></ion-icon>
                             </Link>
                             <Link className='text-2xl text-white ml-3'>
                                 <ion-icon name="cart-outline"></ion-icon>
                             </Link>
-                        </div>
+                        </div> */}
 
                     </ul>
 
@@ -200,7 +223,7 @@ const Shop_Navbar = () => {
 
                             <div className='m-2  grid items-center '><ion-icon name="search-outline"></ion-icon></div>
                             <div className=''>
-                                <input type="text" placeholder=" Search Here" className=' w-[180px] h-[28px]  rounded-lg  outline-none border-none lg:w-[250px] md:w-[130px] md:h-[28px] lg:rounded-xl'
+                                <input type="text" placeholder=" Search Here" className=' w-[96%]  rounded-lg  outline-none border-none h-[28px] lg:rounded-xl'
                                     value={query}
                                     onChange={(e) => setQuery(e.target.value)}
                                 />
